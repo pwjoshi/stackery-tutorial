@@ -1,0 +1,63 @@
+{
+  "nodes": [
+    {
+      "id": "fdc8781a",
+      "type": "function",
+      "name": "Hello!",
+      "outputs": 1,
+      "memorySize": 128,
+      "timeout": 30,
+      "runtime": "nodejs",
+      "location": "inline",
+      "envVars": {},
+      "x": 410,
+      "y": 220,
+      "wires": [
+        []
+      ]
+    },
+    {
+      "id": "a284ce6e",
+      "type": "restApi",
+      "name": "/",
+      "path": "/",
+      "domain": "mycentos.digitalocean.com",
+      "x": 190,
+      "y": 220,
+      "wires": [
+        [
+          "fdc8781a"
+        ]
+      ]
+    },
+    {
+      "id": "66ee79ef",
+      "type": "function",
+      "name": "Echo",
+      "outputs": 1,
+      "memorySize": 128,
+      "timeout": 30,
+      "runtime": "nodejs",
+      "location": "inline",
+      "x": 410,
+      "y": 280,
+      "wires": [
+        []
+      ]
+    },
+    {
+      "id": "a4419003",
+      "type": "restApi",
+      "name": "/echo/{message}",
+      "path": "/{message}",
+      "domain": "mycentos.digitalocean.com",
+      "x": 230,
+      "y": 280,
+      "wires": [
+        [
+          "66ee79ef"
+        ]
+      ]
+    }
+  ]
+}
