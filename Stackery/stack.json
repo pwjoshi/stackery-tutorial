@@ -1,11 +1,7 @@
 {
   "nodes": [
     {
-      "id": "1",
-      "type": "tab"
-    },
-    {
-      "id": "21223c5d",
+      "id": "fdc8781a",
       "type": "function",
       "name": "Hello!",
       "outputs": 1,
@@ -13,7 +9,6 @@
       "timeout": 30,
       "runtime": "nodejs",
       "location": "inline",
-      "noerr": true,
       "x": 410,
       "y": 220,
       "wires": [
@@ -21,19 +16,21 @@
       ]
     },
     {
-      "id": "92a92f8",
+      "id": "a284ce6e",
       "type": "restApi",
+      "name": "/",
       "path": "/",
+      "domain": "mycentos.digitalocean.com",
       "x": 190,
       "y": 220,
       "wires": [
         [
-          "21223c5d"
+          "fdc8781a"
         ]
       ]
     },
     {
-      "id": "9c90f8ce",
+      "id": "66ee79ef",
       "type": "function",
       "name": "Echo",
       "outputs": 1,
@@ -41,7 +38,6 @@
       "timeout": 30,
       "runtime": "nodejs",
       "location": "inline",
-      "noerr": true,
       "x": 410,
       "y": 280,
       "wires": [
@@ -49,14 +45,16 @@
       ]
     },
     {
-      "id": "88100c9d",
+      "id": "a4419003",
       "type": "restApi",
+      "name": "/echo/{message}",
       "path": "/{message}",
-      "x": 210,
+      "domain": "mycentos.digitalocean.com",
+      "x": 230,
       "y": 280,
       "wires": [
         [
-          "9c90f8ce"
+          "66ee79ef"
         ]
       ]
     }
