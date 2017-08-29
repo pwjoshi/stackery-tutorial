@@ -61,6 +61,19 @@
           "66ee79ef"
         ]
       ]
+    },
+    {
+      "id": "71ba09f",
+      "type": "timer",
+      "name": "my3sectimer",
+      "timerType": "interval",
+      "intervalCount": 1,
+      "intervalUnit": "minutes",
+      "x": 160,
+      "y": 360,
+      "wires": [
+        []
+      ]
     }
   ]
 }
