@@ -10,8 +10,8 @@
       "runtime": "nodejs",
       "location": "inline",
       "envVars": {},
-      "x": 410,
-      "y": 220,
+      "x": 370,
+      "y": 200,
       "wires": [
         []
       ]
@@ -22,8 +22,9 @@
       "name": "/",
       "path": "/",
       "domain": "mycentos.digitalocean.com",
-      "x": 190,
-      "y": 220,
+      "method": "GET",
+      "x": 140,
+      "y": 200,
       "wires": [
         [
           "fdc8781a"
@@ -39,8 +40,9 @@
       "timeout": 30,
       "runtime": "nodejs",
       "location": "inline",
-      "x": 410,
-      "y": 280,
+      "envVars": {},
+      "x": 370,
+      "y": 260,
       "wires": [
         []
       ]
@@ -51,8 +53,9 @@
       "name": "/echo/{message}",
       "path": "/{message}",
       "domain": "mycentos.digitalocean.com",
-      "x": 230,
-      "y": 280,
+      "method": "GET",
+      "x": 160,
+      "y": 260,
       "wires": [
         [
           "66ee79ef"
