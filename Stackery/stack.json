@@ -21,7 +21,7 @@
       "type": "restApi",
       "name": "/",
       "path": "/",
-      "domain": "mycentos.digitalocean.com",
+      "domain": "mycloudcenterone.com",
       "method": "GET",
       "x": 140,
       "y": 200,
