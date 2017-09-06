@@ -61,36 +61,6 @@
           "66ee79ef"
         ]
       ]
-    },
-    {
-      "id": "d773d03d",
-      "type": "restApi",
-      "name": "Events",
-      "path": "/events",
-      "domain": "mycloudcenterone.com",
-      "x": 140,
-      "y": 80,
-      "wires": [
-        [
-          "9ea77f73"
-        ]
-      ]
-    },
-    {
-      "id": "9ea77f73",
-      "type": "function",
-      "name": "",
-      "outputs": 1,
-      "memorySize": 128,
-      "timeout": 30,
-      "runtime": "nodejs",
-      "location": "inline",
-      "envVars": {},
-      "x": 380,
-      "y": 80,
-      "wires": [
-        []
-      ]
     }
   ]
 }
