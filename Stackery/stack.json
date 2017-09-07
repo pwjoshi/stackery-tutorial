@@ -61,6 +61,27 @@
           "66ee79ef"
         ]
       ]
+    },
+    {
+      "id": "5ae2c6cb",
+      "type": "bastion",
+      "name": "",
+      "sshKeys": {
+        "": ""
+      },
+      "x": 590,
+      "y": 200,
+      "wires": []
+    },
+    {
+      "id": "754995b3",
+      "type": "virtualNetwork",
+      "name": "",
+      "x": 780,
+      "y": 320,
+      "wires": [],
+      "width": 600,
+      "height": 400
     }
   ]
 }
